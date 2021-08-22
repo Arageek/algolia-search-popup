@@ -9,3 +9,7 @@
  * Domain Path: /languages/
  * Author URI: https://github.com/devwael
  */
+
+if(!defined('ABSPATH')){
+    wp_die('Not Allowed!');
+}
