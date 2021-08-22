@@ -1,0 +1,37 @@
+.asp-disable-scroll {
+    overflow: hidden;
+}
+
+.asp-popup-area-wrapper {}
+
+.asp-popup-area-wrapper.opened {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 15px;
+}
+
+.asp-search-overlay {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgb(75 58 45 / 70%);
+}
+
+.asp-popup-area-wrapper.opened form {
+    position: relative;
+    z-index: 2;
+}
+
+.asp-popup-area-wrapper.opened .asp-search-inputs {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
