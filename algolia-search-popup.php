@@ -1,12 +1,11 @@
 <?php
 /**
- * Plugin Name: Algolia search popup
- * Plugin URI: https://clearfy.pro
- * Description: Disables unused Wordpress features, improves performance and increases SEO rankings, using Clearfy, which makes WordPress very easy.
- * Author: Creative Motion <info@cm-wp.com>
- * Version: 1.9.4
- * Text Domain: clearfy
+ * Plugin Name: Algolia search popupgit
+ * Plugin URI: https://github.com/Arageek/algolia-search-popup
+ * Description: Add popup search form compatible with algolia autocomplete and wp search
+ * Author: Ahmad Wael
+ * Version: 1.0
+ * Text Domain: asp
  * Domain Path: /languages/
- * Author URI: https://cm-wp.com
- * Framework Version: FACTORY_449_VERSION
+ * Author URI: https://github.com/devwael
  */
