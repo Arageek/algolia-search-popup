@@ -4,6 +4,10 @@
 
 .asp-popup-area-wrapper {}
 
+.asp-popup-area-wrapper * {
+    box-sizing: border-box;
+}
+
 .asp-popup-area-wrapper.opened {
     position: fixed;
     width: 100%;
@@ -34,4 +38,71 @@
     position: absolute;
     top: 50px;
     width: 100%;
+    max-width: 1040px;
+    right: 50%;
+    transform: translate(50%, 0);
+    display: flex;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 8px 22px 0 rgb(37 44 97 / 15%),
+        0 4px 6px 0 rgb(93 100 148 / 20%);
+}
+
+.asp-popup-area-wrapper.opened .asp-search-inputs label {
+    width: 56px;
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+.asp-popup-area-wrapper.opened .asp-search-inputs label svg {
+    height: 24px;
+}
+
+.asp-popup-area-wrapper.opened .asp-search-inputs .asp-popup-search-input-wrapper {
+    position: relative;
+    flex: 1 1 0%;
+
+}
+
+.asp-popup-area-wrapper.opened .asp-search-inputs .asp-popup-search-input-wrapper input {
+    border: none;
+    outline: none;
+}
+
+.rtl .asp-popup-area-wrapper.opened .asp-search-inputs .asp-popup-search-input-wrapper input {
+    direction: rtl;
+}
+
+.asp-popup-area-wrapper.opened .asp-search-inputs .asp-close-search-popup {
+    background: none;
+    outline: none;
+    border: none;
+    border-left: 1px solid #eee;
+    color: #a1846e;
+}
+
+.asp-popup-area-wrapper.opened .asp-search-inputs .asp-close-search-popup:hover {
+    color: #6F5643;
+}
+
+.rtl .asp-popup-area-wrapper.opened .asp-search-inputs .asp-close-search-popup {
+    border-left: none;
+    border-right: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+    .asp-popup-area-wrapper.opened {
+        padding: 0;
+    }
+
+    .asp-popup-area-wrapper.opened .asp-search-inputs {
+        top: 0;
+        width: 100%;
+        border-radius: 0;
+    }
 }
