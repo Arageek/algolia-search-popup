@@ -29,5 +29,13 @@
         $(document).trigger('asp_close_popup');
     });
 
+    //close the popup when user press on escape key
+    $(document).keyup(function (e) {
+        if (e.key === "Escape") {
+            $(document).trigger('asp_close_popup');
+        }
+    });
+
+
 
 })(jQuery);
