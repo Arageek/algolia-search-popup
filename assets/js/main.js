@@ -18,7 +18,7 @@
     });
 
     //open popup when the user click on the search button
-    $(document).on('click', '.asp-trigger-button button', function (e) {
+    $(document).on('click', '.asp-trigger-search-popup, #asp-trigger-search-popup', function (e) {
         e.preventDefault();
         $(document).trigger('asp_open_popup');
     });
